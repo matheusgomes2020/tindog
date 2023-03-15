@@ -1,194 +1,186 @@
-<!DOCTYPE html>
-<html>
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
 
-    <head>
-        <meta charset="utf-8">
-        <title>TinDog</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link
-            rel="preconnect"
-            href="https://fonts.gstatic.com"
-            crossorigin="crossorigin">
+h2 {
+    font-family: 'Montserrat-Black';
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
 
-         <!-- Google Fonts -->
-        <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-            rel="stylesheet">
+h3 {
+    font-family: "Montserrat-Bold";
+    font-size: 1.5rem;
+}
 
-            <!-- CSS Stylesheets -->
-        <link rel="stylesheet" href="css/styles.css">
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+p {
+    color: #8f8f8f;
+}
 
-            <!-- Font Awesome -->
-      <script src="https://kit.fontawesome.com/b244488826.js" crossorigin="anonymous"></script>
+body {
+    font-family: "Montserrat";
+}
 
-      <!-- Bootstrap Scripts -->
-        <script
-            src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"></script>
 
-    </head>
+#title{
+    background-color: #ff4c68;
+    color: #fff;
+}
 
-    <body>
+.containeer-fluid {
+    padding: 3% 15% 7%;
+}
 
-        <section id="title">
-            <div class="containeer-fluid">
-            <!-- Nav Bar -->
+/* Navigation Bar */
 
-            <nav class="navbar navbar-expand-lg navbar-dark">
-                <a class="navbar-brand" href="">tindog</a>
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-toggle="collapse"
-                    data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="">Download</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+.navbar {
+    padding: 0 0 4.5rem;
+}
 
-            <!-- Title -->
+.navbar-brand {
+    font-family: "Ubuntu";
+    font-size: 2.5rem;
+    font-weight: bold;
+}
 
-            <div class="row">
+.nav-item {
+    padding: 0 18px;
+}
 
-                <div class="col-lg-6">
-                    <h1>Meet new and interesting dogs nearby.</h1>
-                    <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i>Download</button>
-                    <button type="button"class="btn btn-outline-light btn-lg download-button"><i class="fab fa-google-play"></i>Download</button>
-                </div>
+.nav-link {
+    font-size: 1.2rem;
+    font-family: "Montserrat-Light";
+}
 
-                <div class="col-lg-6">
-                    <img class="title-image" src="images/iphone6.png" alt="iphone-mockup">
-                </div>
+#navbarSupportedContent {
+    margin-left: 47%;
+}
 
-            </div>
-        </div>
-    </section>
+/* Download Buttons */
 
-    <!-- Features -->
+.download-button {
+    margin: 5% 3% 5% 0;
+}
 
-    <section id="features">
+/* Title Image */
 
-      <div class="row">
-        <div class="feature-box col-lg-4">
-          <i class="icon fa-solid fa-check-circle fa-4x"></i>
-          <h3>Easy to use.</h3>
-          <p>So easy to use, even your dog could do it.</p>
-        </div>
-        <div class="feature-box col-lg-4">
-          <i class="icon fa-solid fa-bullseye fa-4x"></i>
-          <h3>Elite Clientele</h3>
-          <p>We have all the dogs, the greatest dogs.</p>
-        </div>
-        <div class="feature-box col-lg-4">
-          <i class="icon fa-solid fa-heart fa-4x"></i>
-          <h3>Guaranteed to work.</h3>
-          <p>Find the love of your dog's life or your money back.</p>
-        </div>
-      </div>
-    </section>
+.title-image {
+    width: 60%;
+    transform: rotate(25deg);
+    position: absolute;
+    top: 30%;
+    right: 30%;
+  }
+  
+  
+  .title-image-container {
+    position: relative;
+  }
 
-    <!-- Testimonials -->
+/* Features Section */
 
-    <section id="testimonials">
+#features {
+    padding: 7% 15%;
+    background-color: #fff;
+    position: relative;
+}
 
-        <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi
-            on TinDog. Woof.</h2>
-        <img class="testimonial-image" src="images/dog-img.jpg" alt="dog-profile">
-        <em>Pebbles, New York</em>
+.feature-box {
+    text-align: center;
+    padding: 5%;
+}
 
-        <!-- <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's
-        help, they've found the love of their life. I think.</h2> <img
-        class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
-        <em>Beverly, Illinois</em> -->
+.icon {
+    color: #ef8172;
+    margin-bottom: 1rem;
+}
 
-    </section>
+.icon:hover {
+    color: #ff4c68;
+}
 
-    <!-- Press -->
+/* Testimonial Section */
 
-    <section id="press">
-        <img class="press-logo" src="images/techcrunch.png" alt="tc-logo">
-        <img class="press-logo" src="images/tnw.png" alt="tnw-logo">
-        <img class="press-logo" src="images/bizinsider.png" alt="biz-insider-logo">
-        <img class="press-logo" src="images/mashable.png" alt="mashable-logo">
+#testimonials {
+    text-align: center;
+    background-color: #ef8172;
+    color: #fff;
+}
 
-    </section>
+.testimonial-image {
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
 
-    <!-- Pricing -->
+.carousel-item {
+    padding: 7% 15%;
+}
 
-    <section id="pricing">
+#press{
+    background-color: #ef8172;
+    text-align: center;
+    padding-bottom: 3%;
+}
 
-        <h2>A Plan for Every Dog's Needs</h2>
-        <p>Simple and affordable price plans for your and your dog.</p>
+.press-logo {
+    width: 15%;
+    margin: 20px 20px 50px;
+}
 
-        <h3>Chihuahua</h3>
-        <h2>Free</h2>
-        <p>5 Matches Per Day</p>
-        <p>10 Messages Per Day</p>
-        <p>Unlimited App Usage</p>
-        <button type="button">Sign Up</button>
+/* Pricing Section */
 
-        <h3>Labrador</h3>
-        <h2>$49 / mo</h2>
-        <p>Unlimited Matches</p>
-        <p>Unlimited Messages</p>
-        <p>Unlimited App Usage</p>
-        <button type="button">Sign Up</button>
+#pricing {
+    padding: 100px;
+    text-align: center;
+  }
+  
+  .price-text {
+    font-size: 3rem;
+    line-height: 1.5;
+  }
+  
+  .pricing-column {
+    padding: 3% 2%;
+  }
 
-        <h3>Mastiff</h3>
-        <h2>$99 / mo</h2>
-        <p>Pirority Listing</p>
-        <p>Unlimited Matches</p>
-        <p>Unlimited Messages</p>
-        <p>Unlimited App Usage</p>
-        <button type="button">Sign Up</button>
 
-    </section>
+  /* Cta Section */
+    #cta {
+        background-color: #ff4c68;
+        color: #fff;
+        padding: 7% 15%;
+        text-align: center;
+    }
 
-    <!-- Call to Action -->
+    .cta-heading {
+        font-family: "Montserrat-Black";
+        font-size: 3.5rem;
+        line-height: 1.5;
+    }
 
-    <section id="cta">
+  /* Footer Section */
 
-        <h3>Find the True Love of Your Dog's Life Today.</h3>
-        <button type="button">Download</button>
-        <button type="button">Download</button>
+  #footer {
+    padding: 7% 15%;
+    text-align: center;
+}
 
-    </section>
+.social-icon {
+    margin: 20px 10px;
+}
 
-    <!-- Footer -->
+  @media (max-width: 1028px) {
 
-    <footer id="footer">
+    #title {
+        text-align: center;
+    }
 
-        <p>© Copyright TinDog</p>
-
-    </footer>
-
-</body>
-
-</html>
+    .title-image {
+        position: static;
+        transform: rotate(0);
+    }
+  }
